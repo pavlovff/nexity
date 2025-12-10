@@ -39,7 +39,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border-radius: 30px;
     color: white;
     position: fixed;
     top: 0;
@@ -339,6 +338,16 @@ footer {
 .navigations a:hover {
     color: rgb(138, 138, 138);
     text-decoration: underline;
+}
+
+/* Supports */
+
+@supports (backdrop-filter: blur(10px)){
+    header {
+        background-color: rgba(0,0,0,0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
 }
 
 /* Adaptations */
