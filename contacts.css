@@ -1,0 +1,154 @@
+/* Contact Section Styles */
+
+#contact {
+    height: auto;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    scroll-snap-align: start;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    color: #ccc;
+    opacity: 0.8;
+}
+
+.contact-info a {
+    color: #10A4AA; /* Slightly brighter accent color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+form label {
+    font-size: 1.2rem;
+    text-align: left;
+    width: 100%;
+    color: white;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #10A4AA;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    padding: 15px 30px;
+    background-color: #10A4AA;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #088F92;
+}
+
+form button:focus {
+    outline: none;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    margin-top: 60px;
+}
+
+/* Adaptations for smaller screens */
+
+@media (max-width: 768px) {
+    .contact-info {
+        gap: 10px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem;
+    }
+
+    form label {
+        font-size: 1rem;
+    }
+
+    form input, form textarea {
+        font-size: 1rem;
+    }
+
+    form button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}
